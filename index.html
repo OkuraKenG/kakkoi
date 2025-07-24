@@ -182,15 +182,9 @@
     <script>
         function triggerExplosion() {
             document.body.innerHTML = '<div style="width: 100%; height: 100vh; "></div>';
-
-            // Change the background to the current image.png
             document.body.style.backgroundImage = "url('./image.png')";
             document.body.style.backgroundSize = "100% 100%";
             document.body.style.backgroundRepeat = "no-repeat";
-
-            // Add an invisible container to maintain the background
-
-            // Add kakkoi-gun.gif after 1 second
             setTimeout(() => {
                 const gunGif = document.createElement('img');
                 gunGif.src = 'https://kronington.com/kakkoi-gun.gif';
@@ -200,7 +194,6 @@
                 gunGif.style.width = '30%';
                 document.body.appendChild(gunGif);
 
-                // Add explosão-meme.gif after another 1 second
                 setTimeout(() => {
                     const explosionGif = document.createElement('img');
                     explosionGif.src = 'https://media.tenor.com/URShj_JWaS8AAAAM/explos%C3%A3o-meme.gif';
@@ -210,7 +203,6 @@
                     explosionGif.style.width = '20%';
                     document.body.appendChild(explosionGif);
 
-                    // Redirect to Rick Roll after another 1 second
                     setTimeout(() => {
                         window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
                     }, 2000);
